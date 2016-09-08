@@ -13,7 +13,6 @@
           var stories = [];
           response.data.children.forEach(function (child) {
             var story = child.data;
-            console.log('thumb:' + story.thumbnail);
             if (invalidThumbNail(story.thumbnail)) {
               story.thumbnail = 'http://www.redditstatic.com/icon.png';
             }
